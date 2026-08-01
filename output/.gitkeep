@@ -1,0 +1,2 @@
+Placeholder to ensure the empty `output/` directory exists in git.
+Runtime files (logs.txt, execution_plan.md, raw_coder_response_*.txt, summary.md) are gitignored per the parent .gitignore.

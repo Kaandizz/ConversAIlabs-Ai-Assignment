@@ -1,0 +1,54 @@
+# ===== Secrets / credentials (NEVER push) =====
+.env
+*.pem
+*.key
+*.crt
+*.p12
+
+# ===== Python runtime / caches =====
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Virtual environments =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== IDEs / editors =====
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===== Agent run outputs (generated per run) =====
+output/logs*.txt
+output/raw_coder_response_attempt*.txt
+output/execution_plan.md
+output/summary.md
+# (output/ folder itself is kept in git via the !output/.gitkeep trick below)
+
+# ===== Sample repos / testbeds (generated or copied in) =====
+node-easy-notes-app/
+testbed-node-easy-notes/
+*-easy-notes*/
+*-testbed*/
+.agent_backup/      # backups written by the Patcher inside any target repo
+
+# ===== Node / frontend artifacts if someone runs npm in the agent root =====
+node_modules/
+dist/
+coverage/
+
+# ===== learn.md NOTE: LEARN.MD SHOULD BE PUSHED — it's interview prep and change log.
+# If you ever want to hide it, UN-comment the line below:
+# ! learn.md   ← (this line is intentionally a comment; learn.md is tracked by default)
